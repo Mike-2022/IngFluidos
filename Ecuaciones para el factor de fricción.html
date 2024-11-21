@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es-mx">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Din-Fluidos 2024</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Aldrich&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Baumans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bruno+Ace&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Features-Image-images.css">
+    <link rel="stylesheet" href="assets/css/Navbar-Centered-Brand-Dark-icons.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-primary navbar-light" style="margin-bottom: 10px;box-shadow: 0px 10px 17px;" data-pgc="Encabezado">
+        <div class="container-fluid">
+            <div class="d-md-flex justify-content-start justify-content-md-center align-items-md-center align-items-xxl-center class=&quot;align-items-xl-center container-fluid justify-content-xl-center&quot;" style="font-family: 'Bruno Ace', serif;"><button class="btn btn-primary border-2 border-dark border" type="button" data-bs-toggle="offcanvas" data-bs-target="#MenuLateral" aria-controls="offcanvasWithBothOptions" style="margin-right:11px;width:42px;padding:2px;padding-right:2px;padding-left:2px;"><span class="navbar-toggler-icon"></span></button>
+                <p style="margin-bottom: 0px;color: var(--bs-body-bg);"><strong>Dinámica de fluidos&nbsp;</strong></p>
+                <p style="margin-bottom: 0px;color: var(--bs-emphasis-color);"><strong>Ecuaciones para el factor de fricción</strong></p>
+            </div>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-start text-bg-primary" tabindex="-1" data-bs-scroll="true" id="MenuLateral" aria-labelledby="offcanvasWithBothOptionsLabel" data-pgc="MenuLateral" style="width: 600px;">
+        <div class="offcanvas-header">
+            <h3 id="offcanvasWithBothOptionsLabel" class="offcanvas-title" style="font-family:Aldrich, sans-serif;height:15px;">Menú</h3><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="list-group" style="margin: 5px;"><a class="list-group-item list-group-item-action" style="color: var(--bs-list-group-active-color);background: var(--bs-link-hover-color);font-weight: bold;"><span>1er parcial</span></a><a class="list-group-item list-group-item-action" href="Número%20de%20Reynolds.html"><span>Número de Reynolds</span></a><a class="list-group-item list-group-item-action" style="background: var(--bs-primary-border-subtle);"><span><strong>Perdidas de energía por fricción</strong></span></a><a class="list-group-item list-group-item-action" href="Flujo%20laminar%20y%20flujo%20turbulento.html"><span style="padding-left: 30px;">Flujo laminar y flujo turbulento</span></a><a class="list-group-item list-group-item-action" href="Ecuaciones%20para%20el%20factor%20de%20fricción.html"><span style="padding-left: 30px;">Ecuaciones para el factor de fricción</span></a><a class="list-group-item list-group-item-action" href="Formula%20de%20Hazen-Williams.html"><span style="padding-left: 30px;">Fórmula de Hazen-Williams</span></a></div>
+            <div class="list-group"><a class="list-group-item list-group-item-action" style="color: var(--bs-list-group-active-color);background: var(--bs-link-hover-color);font-weight: bold;"><span>2° parcial</span></a><a class="list-group-item list-group-item-action" style="background: var(--bs-primary-border-subtle);"><span><strong>Perfiles de velocidad para secciones circulares y flujo en secciones no circulares&nbsp;</strong></span></a><a class="list-group-item list-group-item-action" href="Perfiles%20de%20velocidad%20para%20secciones%20circulares.html"><span style="padding-left: 30px;">Perfiles de velocidad para secciones circulares</span></a><a class="list-group-item list-group-item-action" href="Flujo%20en%20secciones%20no%20circulares.html"><span style="padding-left: 30px;">Flujo en secciones no circulares</span></a><a class="list-group-item list-group-item-action" href="Perdidas%20menores.html"><span>Pérdidas menores</span></a></div>
+        </div>
+    </div>
+    <div class="container" style="border-width: 2px;border-style: solid;margin-bottom: 20px;">
+        <p style="text-align: justify;padding: 15px;"><span class="text-bg-primary d-flex" style="font-weight: bold;padding-left: 10px;padding-right: 10px;font-family: 'Bruno Ace', cursive;border: 6px inset var(--bs-teal) ;" data-pgc="Cabecera 1" data-pgc-field="Contenido">Ecuaciones para el factor de fricción</span>El diagrama de Moody es un medio conveniente y lo suficientemente preciso como para determinar el valor del <strong>factor de fricción</strong> en la resolución de problemas mediante cálculos manuales. Sin embargo, cuando los cálculos son automatizados para resolver problemas en una computadora o calculadora programable, se necesitan ecuaciones para el <strong>factor de fricción</strong>.<br><br>Las ecuaciones utilizadas en el trabajo de Moody constituyen la base del método computacional. Pero esas ecuaciones eran tan intrincadas que requerían un enfoque iterativo. Aquí se&nbsp;muestran dos ecuaciones que permiten la solución directa del factor de fricción; una cubre el <strong>flujo laminar</strong> y la otra el <strong>flujo turbulento</strong>.<br><br>En la <strong>zona de flujo laminar</strong>, para valores por debajo de 2,000, <span style="color: rgb(0, 128, 255);">\(f\)</span> se puede encontrar a partir de la ecuación,<br><br>\(f = \frac{64}{N_R}\)<br><br>Esta relación está graficada en el diagrama de Moody como una línea recta en el lado izquierdo de la gráfica.<br><br>Por supuesto, para los números de Reynolds ubicados entre 2,000 y 4,000, el flujo está en el rango crítico y es imposible predecir el valor de <span style="color: rgb(0, 128, 255);">\(f\)</span>.<br><br>La siguiente ecuación, que permite el cálculo directo del valor del <strong>factor de fricción</strong> para el <strong>flujo turbulento</strong>, fue desarrollada por P. K. Swamee y A. K. Jain:<br><br><span class="d-flex" style="font-weight: bold;font-family: 'Bruno Ace', cursive;border: 6px none var(--bs-teal);color: #0cb508;" data-pgc="Cabecera 1" data-pgc-field="Contenido"> Factor de fricción para el flujo turbulento</span><span class="border-dark border" id="Formula" style="box-shadow: 5px 5px 10px var(--bs-link-color);background: var(--bs-primary-border-subtle);display: inline-flex;padding: 10px;">\(\displaystyle f= \frac{0.25}{\left[ log \left(\frac{1}{3.7(D/\varepsilon)}+\frac{5.74}{(N_R)^{0.9}}\right)\right]^2} \)</span><br><br>La ecuación anterior produce valores para <span style="color: rgb(0, 128, 255);">\(f\)</span> que están dentro de (-1.0 a +1.0) por ciento dentro del rango de rugosidad relativa \(D/\varepsilon\) a partir de 100 hasta 1 x 10<sup>6</sup> y para números de Reynolds desde 5 x 10<sup>3</sup>&nbsp;hasta 1 x&nbsp;10<sup>8</sup>. Ésta es prácticamente la totalidad de la zona&nbsp;turbulenta del diagrama de Moody.&nbsp;</p><span class="text-bg-primary d-flex justify-content-center" style="font-weight: bold;padding-left: 10px;padding-right: 10px;font-family: 'Bruno Ace', cursive;border: 6px inset var(--bs-teal);margin-top: 10px;margin-bottom: 10px;text-align: center;padding-top: 10PX;padding-bottom: 10px;" data-pgc="Cabecera 1" data-pgc-field="Contenido">* * * * FIN DE PÁGINA&nbsp;<br><strong>* * * *&nbsp;</strong></span>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+</body>
+
+</html>
